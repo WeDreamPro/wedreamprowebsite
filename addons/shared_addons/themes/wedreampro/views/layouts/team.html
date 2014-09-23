@@ -1,65 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        {{ theme:partial name="metadata" }}
-        <!-- Google Analytics -->
-        {{ integration:analytics }}
+        {{theme:partial name="meta"}}
     </head>
-    <body>
-        <!-- Global container, 12 columns wide -->
-        <div id="container" class="container_12 clearfix">
-            <!-- Header -->
-            <div id="header" class="grid_12">
-                {{ theme:partial name="header" }}
-            </div>
-            <!-- Content -->
-            <div id="content" class="grid_8 suffix_1">
-                <section id="team" class="bg-light-gray">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2 class="section-heading">{{team_page_title}}</h2>
-                                <h3 class="section-subheading text-muted">{{team_page_description}}</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="team-member">
-                                    <img src="{{team_player_image_1:image}}" class="img-responsive img-circle" alt="" />
-                                    <h4>{{team_player_1_name}}</h4>
-                                    <ul class="list-inline social-buttons">
-                                        <li><a href="{{team_player_1_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="{{team_player_1_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="team-member">
-                                    <img src="{{team_player_image_2:image}}" class="img-responsive img-circle" alt="" />
-                                    <h4>{{team_player_2_name}}</h4>
-                                    <ul class="list-inline social-buttons">
-                                        <li><a href="{{team_player_2_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="{{team_player_2_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 text-center">
-                                <p class="large text-muted">{{hire_text}}</p>
-                            </div>
+    <body id="page-top" class="index">
+        {{theme:partial name="header"}}
+        <section id="team" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">{{team_page_title}}</h2>
+                        <h3 class="section-subheading text-muted">{{team_page_description}}</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="team-member">
+                            <img src="{{team_player_image_1:image}}" class="img-responsive img-circle" alt="" />
+                            <h4>{{team_player_1_name}}</h4>
+                            <ul class="list-inline social-buttons">
+                                <li><a href="{{team_player_1_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="{{team_player_1_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-                </section>
+                    <div class="col-sm-6">
+                        <div class="team-member">
+                            <img src="{{team_player_image_2:image}}" class="img-responsive img-circle" alt="" />
+                            <h4>{{team_player_2_name}}</h4>
+                            <ul class="list-inline social-buttons">
+                                <li><a href="{{team_player_2_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="{{team_player_2_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p class="large text-muted">{{hire_text}}</p>
+                    </div>
+                </div>
             </div>
-            <!-- Sidebar -->
-            <div id="sidebar" class="grid_3">
-                {{ theme:partial name="sidebar" }}
-            </div>
-            <!-- Footer -->
-            <div id="footer" class="grid_12">
-                {{ theme:partial name="footer" }}
-            </div>
-        </div>
+        </section>
+        {{theme:partial name="scripts"}}
     </body>
 </html>
