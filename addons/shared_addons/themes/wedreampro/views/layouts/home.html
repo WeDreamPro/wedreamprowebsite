@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{theme:partial name="meta"}}
+    </head>
+    <body id="page-top" class="index">
+        {{theme:partial name="header"}}
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in">{{title_home}}</div>
+                    <div class="intro-heading">{{subtitle_home}}</div>
+                    <a href="https://github.com/wedreampro" class="btn btn-xl" target="_blank">{{tittle_button}}</a>
+                </div>
+            </div>
+        </header>
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">{{what_we_do}}</h2>
+                        <h3 class="section-subheading text-muted">{{what_we_do_text}}</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">{{service_one_title}}</h4>
+                        <p class="text-muted">{{service_one_description}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">{{service_two_title}}</h4>
+                        <p class="text-muted">{{service_two_description}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">{{service_three_description}}</h4>
+                        <p class="text-muted">{{service_three_description}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{theme:partial name="scripts"}}
+    </body>
+</html>
