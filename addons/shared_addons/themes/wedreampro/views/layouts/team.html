@@ -5,6 +5,14 @@
     </head>
     <body id="page-top" class="index">
         {{theme:partial name="header"}}
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in">{{title_team}}</div>
+                    <div class="intro-heading">{{subtitle_team}}</div>
+                </div>
+            </div>
+        </header>
         <section id="team" class="bg-light-gray">
             <div class="container">
                 <div class="row">
@@ -18,6 +26,7 @@
                         <div class="team-member">
                             <img src="{{team_player_image_1:image}}" class="img-responsive img-circle" alt="" />
                             <h4>{{team_player_1_name}}</h4>
+                            <p class="text-muted">{{team_player_description_1}}</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="{{team_player_1_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="{{team_player_1_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -28,6 +37,7 @@
                         <div class="team-member">
                             <img src="{{team_player_image_2:image}}" class="img-responsive img-circle" alt="" />
                             <h4>{{team_player_2_name}}</h4>
+                            <p class="text-muted">{{team_player_description_2}}</p>
                             <ul class="list-inline social-buttons">
                                 <li><a href="{{team_player_2_twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="{{team_player_2_facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
